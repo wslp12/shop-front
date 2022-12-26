@@ -48,6 +48,7 @@
     "max-lines-per-function": 0,
     "react/no-multi-comp": "off", // 하나의 파일에 여러 컴포넌트(함수)가 존재 하지 않아야한다.
     "one-var": "off", // const 를 한번에 선언해야 한다.
-    "id-length": "off" // id 를 한글자로 선언하면 안된다.
+    "id-length": "off", // id 를 한글자로 선언하면 안된다.
+    "no-ternary": "off" // 삼항 연산자 사용 여부
   }
 }

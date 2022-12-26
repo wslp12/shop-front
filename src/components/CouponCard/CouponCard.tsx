@@ -1,10 +1,10 @@
 const CouponCard = () => {
   return (
-    <div className="bg-cyan-100 rounded-md w-60 min-w-60 p-2 overflow-hidden h-full">
+    <div className="bg-slate-200 rounded-md w-60 min-w-60 p-2 overflow-hidden h-full">
       <div
-        className="rounded-sm shadow-md shadow-slate-300 bg-white relative h-full
-      after:absolute after:contents-[''] after:bg-cyan-100 after:rounded-full after:w-10 after:h-10 after:-right-7 after:top-6
-      before:absolute before:contents-[''] before:bg-cyan-100 before:rounded-full before:w-10 before:h-10 before:-left-7 before:top-6
+        className="rounded-sm shadow-md shadow-slate-100 bg-white relative h-full
+      after:absolute after:contents-[''] after:bg-slate-200 after:rounded-full after:w-10 after:h-10 after:-right-7 after:top-6
+      before:absolute before:contents-[''] before:bg-slate-200 before:rounded-full before:w-10 before:h-10 before:-left-7 before:top-6
       "
       >
         <div className="flex justify-evenly items-center h-full">

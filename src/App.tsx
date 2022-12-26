@@ -4,16 +4,14 @@
 /* eslint-disable no-magic-numbers */
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/jsx-max-depth */
-import MenuIcon from '@mui/icons-material/Menu';
-import SearchIcon from '@mui/icons-material/Search';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import PermIdentityIcon from '@mui/icons-material/PermIdentity';
+
 import CouponCard from './components/CouponCard/CouponCard';
-import Badge from '@mui/material/Badge';
+
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import Header from './components/Header/Header';
 
 interface TabPanelProps {
   index: number;
@@ -48,44 +46,9 @@ const a11yProps = (index: number) => {
 };
 
 const App = () => {
-  const arr = ['신상', '특가 할인제품', '니트', '바지'];
   return (
     <>
-      <header className="h-16 bg-slate-50 border-b border-slate-100">
-        <div className="flex h-full pl-4 pr-4">
-          <div className="first:mr-auto flex">
-            <button type="button">
-              <MenuIcon />
-            </button>
-          </div>
-          <div className="flex justify-center items-center ml-12 text-xl bg-gradient-to-r from-green-900 to-red-500 bg-clip-text fill-transparent text-transparent">
-            마무사
-          </div>
-          <div className="flex-grow flex justify-around">
-            {arr.map((arrItem) => {
-              return (
-                <button type="button" key={arrItem}>
-                  <div key={arrItem}>{arrItem}</div>
-                </button>
-              );
-            })}
-          </div>
-          <div className="last:ml-auto flex gap-3">
-            <button type="button">
-              <SearchIcon />
-            </button>
-
-            <button type="button">
-              <Badge badgeContent={4} color="primary">
-                <ShoppingCartIcon />
-              </Badge>
-            </button>
-            <button type="button">
-              <PermIdentityIcon />
-            </button>
-          </div>
-        </div>
-      </header>
+      <Header />
       <section className="flex flex-col p-3 gap-3">
         <section className="flex flex-row gap-20 justify-center h-24">
           <CouponCard />
